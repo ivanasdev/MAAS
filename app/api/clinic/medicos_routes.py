@@ -26,6 +26,11 @@ router = APIRouter(prefix="/clinic/medicos")
 @router.get("/")
 async def home():
     return {"message": "Bienvenido a la API de Medicos "}
+#Home Routes 
+@router.get("/")
+async def hometest():
+    return {"message": "Bienvenido a la API de Medicos "}
+
 
 #Get medicos
 @router.get("/get_medics")
