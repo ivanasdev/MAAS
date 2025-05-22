@@ -31,6 +31,11 @@ async def home():
 async def hometest():
     return {"message": "Bienvenido a la API de Medicos "}
 
+@router.get("/")
+async def hometest2():
+    return {"message": "Bienvenido a la API de Medicos "}
+
+
 
 #Get medicos
 @router.get("/get_medics")
